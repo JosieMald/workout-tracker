@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { truncate } = require("node:fs");
 
 const Schema = mongoose.Schema;
 
@@ -28,7 +27,7 @@ const ExcercisesSchema = new Schema({
         type: Date,
         default: Date.now
     }
-})
+});
 
 const Excercises = mongoose.model("Excercises", ExcercisesSchema);
 
@@ -49,10 +48,11 @@ let workoutSeed = [
         }
       ]
     },
-
+]
 // As a user, I want to be able to view create and track 
 // daily workouts. I want to be able to log multiple 
 // exercises in a workout on a given day. I should also
 // be able to track the name, type, weight, sets, reps, 
 // and duration of exercise. If the exercise is a cardio 
-// exercise, I should be able to track my distance traveled.
+// exercise, I should be able to track my distance traveled
+
