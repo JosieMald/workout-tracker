@@ -21,6 +21,7 @@
   "homepage": "https://github.com/JosieMald/workout-tracker#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.12.7"
+    "mongoose": "^5.12.7",
+    "mongoose-data-seed": "^2.1.6"
   }
 }
